@@ -6,7 +6,7 @@ const symbol = "!@#$%^&*(_+{}[-=/.,~|?])";
 const allChars = upperCase + lowerCase + number + symbol;
 
 function generatePassword() {
-    const length = 12; // You can adjust the length here if needed
+    const length = 8; // If need to change the   pass vallu ic can change it from hear 
     const password = createPassword(length);
     passwordBox.value = password;
     passwordBox.select();
