@@ -1,3 +1,4 @@
+/* Default styles */
 * {
     margin: 0;
     padding: 0;
@@ -36,13 +37,14 @@ body {
 
 .container h1 span {
     color: #019f55;
-    border-bottom: 4px solid#08f9d5;
+    border-bottom: 4px solid #08f9d5;
     padding-bottom: 7px;
 }
 
 .display img {
     width: 30px;
     cursor: pointer;
+    background-color: transparent;
 }
 
 .display input {
@@ -69,4 +71,24 @@ body {
     padding: 16px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 5%;
+    }
+
+    .container h1 {
+        font-size: 30px;
+    }
+
+    .display {
+        padding: 20px;
+    }
+
+    .container button {
+        font-size: 18px;
+        padding: 12px 16px;
+    }
 }
