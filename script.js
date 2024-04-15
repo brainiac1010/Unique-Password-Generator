@@ -1,3 +1,4 @@
+
 const passwordBox = document.getElementById("password");
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -6,11 +7,9 @@ const symbol = "!@#$%^&*(_+{}[-=/.,~|?])";
 const allChars = upperCase + lowerCase + number + symbol;
 
 function generatePassword() {
-    const length = 8; // If need to change the   pass vallu ic can change it from hear 
+    const length = 8; // i can change the password length here
     const password = createPassword(length);
     passwordBox.value = password;
-    passwordBox.select();
-    document.execCommand("copy");
 }
 
 function createPassword(length) {
